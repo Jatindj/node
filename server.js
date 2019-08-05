@@ -5,6 +5,6 @@ const port = process.env.port || 3000;
 app.get('/', (req, res) => res.send('Hello World!'));
 
 
-http.listen(port, function () {
+app.listen(port, function () {
     console.log('listening on *:' + port);
 });
